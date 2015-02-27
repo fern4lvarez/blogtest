@@ -1,0 +1,4 @@
+name: oscillatingblog
+markdown: redcarpet
+pygments: true
+baseurl: /blogtest
