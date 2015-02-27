@@ -2,11 +2,16 @@
 layout: default
 title: oscillatingblog
 ---
-<div id="home">
-<h1>Blog Posts</h1>
-<ul class="posts">
-{% for post in site.posts %}
-<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
-</div>
+<!-- Team -->
+<section id="posts" class="about bg-success">
+	<div class="container">
+		<div class="col-lg-12 text-center posts">
+		<ul class="clean">
+			{% for post in site.posts %}
+			<li><span>{{ post.date | date_to_string }}</span><a href="{{site.baseurl}}{{ post.url }}"> {{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+		</div>
+	</div>
+    <!-- /.container -->
+</section>

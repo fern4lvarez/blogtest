@@ -63,6 +63,13 @@ hr.small {
     max-width: 100px;
 }
 
+/* Custom Unordered List */
+
+ul.clean {
+    list-style-type: none;
+    list-style: none;
+}
+
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -233,6 +240,11 @@ hr.small {
     margin: 10px;
 }
 
+/* Posts */
+
+.posts {
+    font-size: 36px;
+}
 
 /* Footer */
 
