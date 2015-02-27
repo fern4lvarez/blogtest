@@ -4,10 +4,10 @@ title: oscillatingblog
 ---
 <section id="posts" class="about bg-success">
 	<div class="container">
-		<div class="col-lg-12 text-center posts">
+		<div class="col-lg-12 text-center post">
 		<ul class="clean">
 			{% for post in site.posts %}
-			<li><span>{{ post.date | date_to_string }}</span><a href="{{site.baseurl}}{{ post.url }}"> {{ post.title }}</a></li>
+			<li><span>{{ post.date | date_to_string }}</span><a href="{{site.baseurl}}{{ post.url }}#post"> <strong>{{ post.title }}</strong></a></li>
 			{% endfor %}
 		</ul>
 		</div>

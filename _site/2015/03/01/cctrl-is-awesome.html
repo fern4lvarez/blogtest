@@ -11,20 +11,20 @@
     <meta name="author" content="Fernando Alvarez, Mateusz Korszun">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{site.baseurl}}/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="{{site.baseurl}}/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/blogtest/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/blogtest/img/favicon.ico" type="image/x-icon">
 
-    <title>{{ page.title }}</title>
+    <title>Hello world</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{site.baseurl}}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/blogtest/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{site.baseurl}}/css/osw.css" rel="stylesheet">
-    <link href="{{site.baseurl}}/css/syntax.css" rel="stylesheet">
+    <link href="/blogtest/css/osw.css" rel="stylesheet">
+    <link href="/blogtest/css/syntax.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{{site.baseurl}}/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/blogtest/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
 
@@ -51,7 +51,7 @@
                 <a href="#top">Home</a>
             </li>
             <li>
-                <a href="{{site.baseurl}}/#posts">Posts</a>
+                <a href="/blogtest/#posts">Posts</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -65,11 +65,78 @@
             <h1>oscillatingblog</h1>
             <h3>blogging about open source is hard</h3>
             <br>
-            <a href="{{site.baseurl}}/#posts" class="btn btn-dark btn-lg">Go</a>
+            <a href="/blogtest/#posts" class="btn btn-dark btn-lg">Go</a>
         </div>
     </header>
 
-    {{ content }}
+    <section id="post" class="about bg-success">
+	<div class="container">
+		<h2>Hello world</h2>
+		<p class="meta">01 Mar 2015</p>
+		<div class="post">
+		<p><code>cctrl</code> is a set of command line utilities to help you create and manage applications
+and users hosted on platforms compatible with <a href="https://www.cloudcontrol.com">cloudControl</a>.</p>
+
+<h2>Dependencies</h2>
+
+<ul>
+<li>python 2.6.x or 2.7.x</li>
+<li>python-setuptools</li>
+<li>pip</li>
+</ul>
+
+<h2>Installation</h2>
+
+<p>To install <code>cctrl</code>:</p>
+
+<ul>
+<li><p>Via pip (non-windows compatible)</p>
+
+<p><code>$ (sudo) pip install cctrl</code></p></li>
+<li><p>Via setup.py</p>
+
+<p><code>$ (sudo) python setup.py install</code></p>
+
+<p>Dependencies should be automatically fetched by <code>easy_install</code>.</p></li>
+<li><p>Via executable (windows only)</p>
+
+<p>https://www.cloudcontrol.com/download/win</p></li>
+</ul>
+
+<p>To upgrade <code>cctrl</code> (non-windows compatible):</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ (sudo) pip install cctrl --upgrade
+</code></pre></div>
+<p>To check successful installation of <code>cctrl</code>:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cctrlapp -v
+cctrlapp 1.x.x using pycclib 1.x.x
+</code></pre></div>
+<h2>Configuration</h2>
+
+<p>If you don&#39;t have an account yet, you can create it with this command:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cctrluser create
+</code></pre></div>
+<p>Once you&#39;re done with installation and already have an account, you just
+need to run one more command to get your setup ready:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cctrluser setup
+</code></pre></div>
+<p>This command will save your email and the SSH public key you will use
+to authenticate and to push with. See <code>cctrluser setup -h</code> for further
+setup information.</p>
+
+<h2>Usage</h2>
+
+<p>See <code>cctrlapp -h</code> to learn about its usage and available commands.</p>
+
+<h2>Vagrant Support</h2>
+
+<p>This project includes Vagrant support, so you can start an Ubuntu virtual machine
+with your local <code>cctrl</code> version installed and ready to use. It might be also useful
+for Windows users, so they can have a more Unix-like experience.</p>
+
+		</div>
+	</div>
+    <!-- /.container -->
+</section>
 
     <!-- Footer -->
     <footer id="contact">
@@ -100,10 +167,10 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="{{site.baseurl}}/js/jquery.js"></script>
+    <script src="/blogtest/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
+    <script src="/blogtest/js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
